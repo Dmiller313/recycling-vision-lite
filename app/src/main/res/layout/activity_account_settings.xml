@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".user.AccountSettings"
+    android:layout_marginHorizontal="50dp">
+
+        <Switch
+            android:layout_marginHorizontal="20dp"
+            android:id="@+id/historySwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/track_history"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/changePassword"
+            android:checked="true"/>
+
+
+            <Button
+                android:textColor="@color/White"
+                android:background="@drawable/ic_button"
+                android:id="@+id/changePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/change_npassword"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@id/historySwitch"
+                app:layout_constraintBottom_toTopOf="@id/saveButton"/>
+
+        <Button
+            android:textColor="@color/White"
+            android:background="@drawable/ic_button"
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_settings"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            app:layout_constraintTop_toBottomOf="@id/changePassword"
+            app:layout_constraintBottom_toTopOf="@id/logout_button"/>
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:textColor="#FFFFFF"
+        android:background="#FF0000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

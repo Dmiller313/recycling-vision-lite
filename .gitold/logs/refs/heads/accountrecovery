@@ -1,0 +1,4 @@
+0000000000000000000000000000000000000000 55b460bf629ed52cb1d3ae92fe842850b8b35db6 David Miller <dmiller23@myseneca.ca> 1593301154 -0400	branch: Created from master
+55b460bf629ed52cb1d3ae92fe842850b8b35db6 6f7fc5651b8c53ac4c857216d69704a33eee693f David Miller <dmiller23@myseneca.ca> 1593303508 -0400	commit: account recovery view
+6f7fc5651b8c53ac4c857216d69704a33eee693f 229039e47d582c2fa23950e0c2e489eb804a015b David Miller <dmiller23@myseneca.ca> 1593718230 -0400	commit: refactor packages and added missing classes
+229039e47d582c2fa23950e0c2e489eb804a015b 00b8ce75481f91a1ff867986c0660da96d58cb6f David Miller <dmiller23@myseneca.ca> 1594440479 -0400	commit: validationemail updated to use Volley, project restructured

@@ -1,0 +1,71 @@
+0000000000000000000000000000000000000000 93c4f45dd9bdfa09e5b65d15bc0e02ce914e4b3a David Miller <dmiller23@myseneca.ca> 1592155279 -0400	clone: from https://github.com/Dmiller313/recycling-vision-android.git
+93c4f45dd9bdfa09e5b65d15bc0e02ce914e4b3a 42ab9ffe0f2a34367fdaf5ef2aa428302608c3fa David Miller <dmiller23@myseneca.ca> 1592155314 -0400	commit: android repo initialized
+42ab9ffe0f2a34367fdaf5ef2aa428302608c3fa ad9636d065c4ab71d17ce5d0edba268eae9c0814 David Miller <dmiller23@myseneca.ca> 1592183964 -0400	commit: validationemail complete
+ad9636d065c4ab71d17ce5d0edba268eae9c0814 85697b767773509db2fdd2f7d59d43edc361a6fe David Miller <dmiller23@myseneca.ca> 1592782729 -0400	commit: splash screen created
+85697b767773509db2fdd2f7d59d43edc361a6fe 55b460bf629ed52cb1d3ae92fe842850b8b35db6 David Miller <dmiller23@myseneca.ca> 1592782752 -0400	pull: Merge made by the 'recursive' strategy.
+55b460bf629ed52cb1d3ae92fe842850b8b35db6 0a3b1c962dd9d0bda2673854a3768af8fadbbca5 David Miller <dmiller23@myseneca.ca> 1594440512 -0400	pull: Fast-forward
+0a3b1c962dd9d0bda2673854a3768af8fadbbca5 c314b4576a76e51e0df6245bc93b01e6e0316b0d David Miller <dmiller23@myseneca.ca> 1594444639 -0400	commit (merge): merge accountrecovery into master
+c314b4576a76e51e0df6245bc93b01e6e0316b0d 8f3b4f32a9a0925e5a3f4204636e1fdbe9f15566 David Miller <dmiller23@myseneca.ca> 1594444744 -0400	commit: cleanup
+8f3b4f32a9a0925e5a3f4204636e1fdbe9f15566 3459e960bdcdf3980412c221109acef0c195d100 David Miller <dmiller23@myseneca.ca> 1594510283 -0400	pull: Fast-forward
+3459e960bdcdf3980412c221109acef0c195d100 b276c41c998202d9558be6a092e72ccaa14ef381 David Miller <dmiller23@myseneca.ca> 1594922578 -0400	pull: Fast-forward
+b276c41c998202d9558be6a092e72ccaa14ef381 3cefdfe827e5f62ee94ee9b3fae80f9c087a12cc David Miller <dmiller23@myseneca.ca> 1594926581 -0400	commit: login added and navigation started
+3cefdfe827e5f62ee94ee9b3fae80f9c087a12cc 4dea9b2663e1a6f225f0867e3e49abe32df5e270 David Miller <dmiller23@myseneca.ca> 1594935268 -0400	commit: navigation routes added
+4dea9b2663e1a6f225f0867e3e49abe32df5e270 01e52a32459159847554c76b6f110e762b5c37d2 David Miller <dmiller23@myseneca.ca> 1594935706 -0400	commit: added images for navigation buttons
+01e52a32459159847554c76b6f110e762b5c37d2 d82af2fb3615ede7354b933b580c55645a46a0ac David Miller <dmiller23@myseneca.ca> 1595019852 -0400	pull: Fast-forward
+d82af2fb3615ede7354b933b580c55645a46a0ac 25c235654ee6353dc0dc2bebabf7c29dfe64de35 David Miller <dmiller23@myseneca.ca> 1595026072 -0400	pull: Fast-forward
+25c235654ee6353dc0dc2bebabf7c29dfe64de35 d11f5b71257f9eac4efd55144d0d153923802d00 David Miller <dmiller23@myseneca.ca> 1595034541 -0400	pull: Fast-forward
+d11f5b71257f9eac4efd55144d0d153923802d00 6f41fce3c78e26b35add190303f6bdaad02d0de9 David Miller <dmiller23@myseneca.ca> 1595045949 -0400	commit: validationemail working successfully
+6f41fce3c78e26b35add190303f6bdaad02d0de9 2a07220b86926c56be611a0c54b3df780802f32c David Miller <dmiller23@myseneca.ca> 1595103459 -0400	commit: TakePhoto Volley request started
+2a07220b86926c56be611a0c54b3df780802f32c dd9b622f26f1c12564d9b8371592f61904b648df David Miller <dmiller23@myseneca.ca> 1595429860 -0400	pull: Fast-forward
+dd9b622f26f1c12564d9b8371592f61904b648df 3c4db5ea3be23ebabaa59e1ff864a42e60ba9f69 David Miller <dmiller23@myseneca.ca> 1595440615 -0400	commit: added multipartrequest to handle volley image upload
+3c4db5ea3be23ebabaa59e1ff864a42e60ba9f69 c67e69a33f379adb73a4d3867faf41802e8ce722 David Miller <dmiller23@myseneca.ca> 1595447300 -0400	commit: confirmation fragment added
+c67e69a33f379adb73a4d3867faf41802e8ce722 31d4c60796daf16592e0c976f0168cc46e5147eb David Miller <dmiller23@myseneca.ca> 1595458257 -0400	commit: takephoto functionality added
+31d4c60796daf16592e0c976f0168cc46e5147eb d94f99c04ca50d246f9e5dcbea2dfd7016944493 David Miller <dmiller23@myseneca.ca> 1595462794 -0400	commit: added processing screen requirements
+d94f99c04ca50d246f9e5dcbea2dfd7016944493 7e4b609504078aabc1fbb84eae8b05ac488a2418 David Miller <dmiller23@myseneca.ca> 1595462816 -0400	pull: Merge made by the 'recursive' strategy.
+7e4b609504078aabc1fbb84eae8b05ac488a2418 2c01ffe1b56fcc67bad9e5cb004cc48134b51b26 David Miller <dmiller23@myseneca.ca> 1595468185 -0400	commit: altered takephoto request to use okhttp
+2c01ffe1b56fcc67bad9e5cb004cc48134b51b26 32fb14f505d2385e9172a18568915ea95f0cd677 David Miller <dmiller23@myseneca.ca> 1595530559 -0400	pull: Fast-forward
+32fb14f505d2385e9172a18568915ea95f0cd677 8163230886ba7e3f05498fd629bde3462c1a8abc David Miller <dmiller23@myseneca.ca> 1595536718 -0400	commit: take photo loading screen view added
+8163230886ba7e3f05498fd629bde3462c1a8abc 55b486ecd2120b97a23429cf2c91bd2fd944ce27 David Miller <dmiller23@myseneca.ca> 1595536725 -0400	pull: Merge made by the 'recursive' strategy.
+55b486ecd2120b97a23429cf2c91bd2fd944ce27 8a25bea2fd1cf6355346d07f6af25fd8c145a1db David Miller <dmiller23@myseneca.ca> 1595545570 -0400	commit: ids added to take photo view
+8a25bea2fd1cf6355346d07f6af25fd8c145a1db 39941d33d302ca9fadca52418e5fdca47ce951d0 David Miller <dmiller23@myseneca.ca> 1595550667 -0400	commit: fixed login package
+39941d33d302ca9fadca52418e5fdca47ce951d0 d18819d2ddb876e6367932cf2af6991250612ca3 David Miller <dmiller23@myseneca.ca> 1595818884 -0400	commit: fixed registration multithreading crash
+d18819d2ddb876e6367932cf2af6991250612ca3 8ebd3f2ba96e9ff8817392a1f3ca1350acf7a388 David Miller <dmiller23@myseneca.ca> 1595818898 -0400	pull: Merge made by the 'recursive' strategy.
+8ebd3f2ba96e9ff8817392a1f3ca1350acf7a388 7d8a578514e46f7834bf4331c8eb923e890195b9 David Miller <dmiller23@myseneca.ca> 1595898376 -0400	commit: added server wakeup calls upon app start, retrieve recycling instructions
+7d8a578514e46f7834bf4331c8eb923e890195b9 225835db6977327cd614eea92205d10f8b14d1ce David Miller <dmiller23@myseneca.ca> 1595905054 -0400	commit: photo sizes reduced and are successfully sent to the server
+225835db6977327cd614eea92205d10f8b14d1ce d836ee721075fae636ce1f81eabbb546bca4e2d4 David Miller <dmiller23@myseneca.ca> 1595905067 -0400	pull: Merge made by the 'recursive' strategy.
+d836ee721075fae636ce1f81eabbb546bca4e2d4 15d8ec70e2654fc3cd80d4740d8248635ac6a713 David Miller <dmiller23@myseneca.ca> 1595910548 -0400	commit: updated several views, started terms of use
+15d8ec70e2654fc3cd80d4740d8248635ac6a713 8cddfcf50b77ab3fb04a13934a2cf78d066d70a4 David Miller <dmiller23@myseneca.ca> 1595910556 -0400	pull: Merge made by the 'recursive' strategy.
+8cddfcf50b77ab3fb04a13934a2cf78d066d70a4 c2127ed4c062d91d2f2ae38c661e74f7383ccdaa David Miller <dmiller23@myseneca.ca> 1596059141 -0400	pull: Fast-forward
+c2127ed4c062d91d2f2ae38c661e74f7383ccdaa 645ed72cbcd038e54d47873158fcb05013908fee David Miller <dmiller23@myseneca.ca> 1596305275 -0400	pull: Fast-forward
+645ed72cbcd038e54d47873158fcb05013908fee e7614747c6571cd214b2ff525387a0a47c0055d7 David Miller <dmiller23@myseneca.ca> 1596305488 -0400	commit: trimmed unused code from takephoto, added terms view skeleton
+e7614747c6571cd214b2ff525387a0a47c0055d7 d2fd81ea84a9171bdf6870f4128335b22b694ed7 David Miller <dmiller23@myseneca.ca> 1596307876 -0400	commit: set all views to display in portrait only, tweaked validationemail view
+d2fd81ea84a9171bdf6870f4128335b22b694ed7 d9f2507b42b2324a11c6c5150e6e899214caf8ea David Miller <dmiller23@myseneca.ca> 1596309884 -0400	commit: reenabled password reset button
+d9f2507b42b2324a11c6c5150e6e899214caf8ea 82919e9039f91f4135145f8224528c9b555cddb3 David Miller <dmiller23@myseneca.ca> 1596333170 -0400	pull: Fast-forward
+82919e9039f91f4135145f8224528c9b555cddb3 062cffc80571b3fb0ee328f7e3954686f6569d84 David Miller <dmiller23@myseneca.ca> 1596333518 -0400	commit: redundant comments removed
+062cffc80571b3fb0ee328f7e3954686f6569d84 5f5bab32ba0f64dfd80cf52b9c0a3abe16bdbf03 David Miller <dmiller23@myseneca.ca> 1596333528 -0400	pull: Merge made by the 'recursive' strategy.
+5f5bab32ba0f64dfd80cf52b9c0a3abe16bdbf03 e239fd7b979f6a237f6fb723c5f1e60b9e04844c David Miller <dmiller23@myseneca.ca> 1596387669 -0400	pull: Fast-forward
+e239fd7b979f6a237f6fb723c5f1e60b9e04844c b985b6a9432d2b88e526cc5c8caf1ac25c335be0 David Miller <dmiller23@myseneca.ca> 1596388306 -0400	commit: take photo pushes data to results overlay
+b985b6a9432d2b88e526cc5c8caf1ac25c335be0 225e4659df6582504565262630b427e72d4ebf38 David Miller <dmiller23@myseneca.ca> 1596390715 -0400	pull: Fast-forward
+225e4659df6582504565262630b427e72d4ebf38 878c2755cd52c0cae51d315f31adc296b1c8727b David Miller <dmiller23@myseneca.ca> 1596392714 -0400	pull: Fast-forward
+878c2755cd52c0cae51d315f31adc296b1c8727b 02dc8adfce1dc9f449c7f921d74d0f701ce77a22 David Miller <dmiller23@myseneca.ca> 1596392930 -0400	commit: result overlay fixed
+02dc8adfce1dc9f449c7f921d74d0f701ce77a22 3d625ef90bf64cda40333065f21f37214227bfc5 David Miller <dmiller23@myseneca.ca> 1596395555 -0400	commit: result overlay correctly renders image
+3d625ef90bf64cda40333065f21f37214227bfc5 1d6632876dcfa4144060b1c4f55b3d65f524d2c2 David Miller <dmiller23@myseneca.ca> 1596414120 -0400	pull: Fast-forward
+1d6632876dcfa4144060b1c4f55b3d65f524d2c2 4912b14bc8e99b12ffca8681d386dea974642d22 David Miller <dmiller23@myseneca.ca> 1596418875 -0400	commit: small fixes to Registration, RecReferences
+4912b14bc8e99b12ffca8681d386dea974642d22 c3fc2cc8d8759469d4f62b5e4c9c5c1b46e46ad2 David Miller <dmiller23@myseneca.ca> 1596425504 -0400	pull: Fast-forward
+c3fc2cc8d8759469d4f62b5e4c9c5c1b46e46ad2 db48d93f0af420d26c109db70245fe32054f3431 David Miller <dmiller23@myseneca.ca> 1596470879 -0400	commit: password reset fixed
+db48d93f0af420d26c109db70245fe32054f3431 34d3129d37b949201aa8391fa14822877a696552 David Miller <dmiller23@myseneca.ca> 1596492721 -0400	commit: terms of use implemented
+34d3129d37b949201aa8391fa14822877a696552 d2de27af9504377cbfea05f437b7e491be6a33e3 David Miller <dmiller23@myseneca.ca> 1596496115 -0400	commit: removed blank activities on back pressed
+d2de27af9504377cbfea05f437b7e491be6a33e3 712e83d0470969a0621b1d3c6946cffa9cb31829 David Miller <dmiller23@myseneca.ca> 1596497216 -0400	commit: alpha release created (signed apk)
+712e83d0470969a0621b1d3c6946cffa9cb31829 99ce499117807df3638a0481e0683854ea3d663d David Miller <dmiller23@myseneca.ca> 1596567404 -0400	commit: patches for alpha 0.2
+99ce499117807df3638a0481e0683854ea3d663d 189bb379f03ecb76a129f5262f164bc98ddd154a David Miller <dmiller23@myseneca.ca> 1596571810 -0400	pull: Fast-forward
+189bb379f03ecb76a129f5262f164bc98ddd154a 1aa4f5de7aaac9055847f4d8a84da7f399d3e056 David Miller <dmiller23@myseneca.ca> 1596644794 -0400	commit: removed missing information toast
+1aa4f5de7aaac9055847f4d8a84da7f399d3e056 b89fa5b24e6c1a55408b5042303dcf8b1d862582 David Miller <dmiller23@myseneca.ca> 1596648893 -0400	commit: account recovery view altered
+b89fa5b24e6c1a55408b5042303dcf8b1d862582 2b02ef8bec9b4fcf0c9a0667e1e3708b44c76f66 David Miller <dmiller23@myseneca.ca> 1596674672 -0400	commit: altered terms of use view to better fit different device sizes
+2b02ef8bec9b4fcf0c9a0667e1e3708b44c76f66 ce9d72c5161ab1cad1146545599e82bd52d64dc8 David Miller <dmiller23@myseneca.ca> 1596682733 -0400	pull: Fast-forward
+ce9d72c5161ab1cad1146545599e82bd52d64dc8 d1bb45ad9cb54ac9539e3ea8fa98b0cf2f60bb40 David Miller <dmiller23@myseneca.ca> 1596860146 -0400	pull: Fast-forward
+d1bb45ad9cb54ac9539e3ea8fa98b0cf2f60bb40 1e7ae34f2a91dd9e7b6f7d7ee7a5b55652195ac2 David Miller <dmiller23@myseneca.ca> 1597001273 -0400	commit (merge): visual changes merged with match history initial
+1e7ae34f2a91dd9e7b6f7d7ee7a5b55652195ac2 cd3cf7ddeabef8b6d3d1e0ac586e5951c0f03c57 David Miller <dmiller23@myseneca.ca> 1597028012 -0400	commit: readme updated
+cd3cf7ddeabef8b6d3d1e0ac586e5951c0f03c57 16feccdc21a7184b2270b3c989ee35445457ed68 David Miller <dmiller23@myseneca.ca> 1597028135 -0400	commit: fixed readme formatting
+16feccdc21a7184b2270b3c989ee35445457ed68 9f37b08f65989c9d65fc428c2ef11fdb2bd4a3ab David Miller <dmiller23@myseneca.ca> 1597087251 -0400	pull: Fast-forward
+9f37b08f65989c9d65fc428c2ef11fdb2bd4a3ab a766a4177c4af048d68e86eec0c2f9384086ec86 David Miller <dmiller23@myseneca.ca> 1597116784 -0400	commit: fixed readme formatting
+a766a4177c4af048d68e86eec0c2f9384086ec86 68d89db5f1f35ca60a0907aea1ed6cf4dd639979 David Miller <dmiller23@myseneca.ca> 1597247507 -0400	pull: Fast-forward

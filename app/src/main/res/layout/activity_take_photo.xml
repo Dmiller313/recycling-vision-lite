@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/process_wait_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginVertical="100dp">
+        <TextView
+            android:id="@+id/processingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/processing"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:layout_weight="1" />
+        <ProgressBar
+            android:id="@+id/progress_circular"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/takephoto_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/takephoto_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/photo_instruction"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="60dp" />
+
+        <ImageView
+            android:id="@+id/image_preview"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:padding="1dp"
+            android:src="@drawable/image_placeholder"
+            android:gravity="center"
+            android:contentDescription="@string/image_preview"
+            app:layout_constraintTop_toBottomOf="@id/takephoto_instructions"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/photo_buttons"/>
+
+        <LinearLayout
+            android:id="@+id/photo_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/image_preview"
+            app:layout_constraintBottom_toTopOf="@id/back_takephoto"
+            android:gravity="center"
+            android:layout_marginHorizontal="30dp">
+            <Button
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:id="@+id/takephoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:background="@drawable/ic_button"
+                android:text="@string/take_photo"
+                app:layout_constraintTop_toBottomOf="@id/image_preview"
+                app:layout_constraintRight_toLeftOf="@id/sendphoto"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/back_takephoto"/>
+
+            <Button
+                android:textColor="@color/White"
+                android:background="@drawable/ic_button"
+                android:layout_weight="1"
+                android:id="@+id/sendphoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/analyze_photo"
+                app:layout_constraintTop_toBottomOf="@id/image_preview"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/takephoto"
+                app:layout_constraintBottom_toTopOf="@id/back_takephoto"/>
+
+        </LinearLayout>
+
+        <Button
+            android:textColor="@color/White"
+            android:background="@drawable/ic_button"
+            android:id="@+id/back_takephoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/photo_buttons"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

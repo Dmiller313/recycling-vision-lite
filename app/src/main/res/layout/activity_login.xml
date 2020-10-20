@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.Login"
+    android:background="@drawable/ic_login_background">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_recycling_vision_logo2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/login_details"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:layout_marginVertical="50dp"
+        android:id="@+id/login_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <EditText
+            android:id="@+id/login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:hint="@string/email_hint"
+            android:inputType="text"
+            android:maxLength="50"
+            android:digits="abcdefghijklmnopqrstuvwxyz
+                            ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                            0123456789
+                            @.-_"/>
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <TextView
+        app:layout_constraintVertical_bias="0.3"
+        android:id="@+id/loginErrorMessage"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#5C0E29"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/login_details"
+        app:layout_constraintBottom_toTopOf="@id/buttons"/>
+
+    <ProgressBar
+        android:visibility="invisible"
+        android:id="@+id/login_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginErrorMessage"
+        app:layout_constraintTop_toTopOf="@id/buttons"
+        app:layout_constraintBottom_toBottomOf="@id/buttons"/>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/login_details"
+        app:layout_constraintBottom_toTopOf="@id/divider">
+
+        <Button
+            android:layout_marginVertical="10dp"
+            android:id="@+id/recoverAccount"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_login_button"
+            android:backgroundTint="@color/LightSkyBlue"
+            android:text="@string/recover_account"
+            android:textColor="@color/LightSkyBlue"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_login_button"
+            android:backgroundTint="@color/LightSkyBlue"
+            android:fontFamily="sans-serif"
+            android:text="@string/sign_in"
+            android:textColor="@color/LightSkyBlue"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="350dp"
+        android:layout_height="0.5dp"
+        android:background="@color/Black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttons"
+        app:layout_constraintBottom_toTopOf="@id/create_account"/>
+
+    <LinearLayout
+        android:id="@+id/create_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/create_account_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_account"
+            android:textColor="@color/LightSkyBlue"
+            android:fontFamily="sans-serif"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/create_account_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_one"
+            android:textColor="@color/LightSkyBlue"
+            android:background="@drawable/ic_login_button"
+            android:backgroundTint="@color/LightSkyBlue"
+            android:onClick="setCreateAccount"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

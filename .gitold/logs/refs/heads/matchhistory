@@ -1,0 +1,9 @@
+0000000000000000000000000000000000000000 ce9d72c5161ab1cad1146545599e82bd52d64dc8 David Miller <dmiller23@myseneca.ca> 1596770626 -0400	branch: Created from master
+ce9d72c5161ab1cad1146545599e82bd52d64dc8 7d276d7c30709fb034b061d52975bdeb42c99f0e David Miller <dmiller23@myseneca.ca> 1596770710 -0400	commit: alteration to the navigation view to accommodate 4 buttons
+7d276d7c30709fb034b061d52975bdeb42c99f0e 711998884885087446d698f0819e3e47a852fdbc David Miller <dmiller23@myseneca.ca> 1596860127 -0400	commit: display match percent, matchhistory request created
+711998884885087446d698f0819e3e47a852fdbc 3a2148b5d8711ed2c5f2946c50dbcecc420b1e7e David Miller <dmiller23@myseneca.ca> 1596994757 -0400	pull: Fast-forward
+3a2148b5d8711ed2c5f2946c50dbcecc420b1e7e aee9173f470d773be9b20424f2fc12b4f3a145cc David Miller <dmiller23@myseneca.ca> 1596999667 -0400	commit: store results from image rec to server
+aee9173f470d773be9b20424f2fc12b4f3a145cc 2d28e0b60a3d6dfc081c709467f553b7467cd736 David Miller <dmiller23@myseneca.ca> 1597030584 -0400	pull: Fast-forward
+2d28e0b60a3d6dfc081c709467f553b7467cd736 e699fb45102dfec36ef02433cad41f248b77771b David Miller <dmiller23@myseneca.ca> 1597076375 -0400	commit: images stored to the server are less compressed
+e699fb45102dfec36ef02433cad41f248b77771b 4281a00d0b8966e31c429de2e489d4130913345c David Miller <dmiller23@myseneca.ca> 1597084907 -0400	pull: Fast-forward
+4281a00d0b8966e31c429de2e489d4130913345c ad553b43621841e023b78b2add04ed24791d4512 David Miller <dmiller23@myseneca.ca> 1597086976 -0400	commit: history settings works now

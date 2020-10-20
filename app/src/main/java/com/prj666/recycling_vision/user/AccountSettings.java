@@ -1,24 +1,15 @@
 package com.prj666.recycling_vision.user;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.res.AssetManager;
 import android.os.Bundle;
-import android.text.InputFilter;
-import android.text.method.DigitsKeyListener;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
-import android.widget.EditText;
-import android.widget.Filter;
-import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.Toast;
 
-import com.prj666.recycling_vision.LogoutDialogFragment;
 import com.prj666.recycling_vision.R;
 
 import java.io.BufferedReader;
@@ -34,7 +25,7 @@ public class AccountSettings extends AppCompatActivity {
     private final String SETTINGS_FILE = "accountSettings.txt";
 
     Switch historySwitch;
-    Button changePassword, changeLocation, saveButton, logoutButton;
+    Button changePassword, saveButton, logoutButton;
 
     Settings userSettings;
     File userSettingsFile;
@@ -57,8 +48,7 @@ public class AccountSettings extends AppCompatActivity {
         changePassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent reset = new Intent(AccountSettings.this, PasswordReset.class);
-                AccountSettings.this.startActivity(reset);
+                Toast.makeText(getApplicationContext(), "Not available in Lite version", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -104,7 +94,7 @@ public class AccountSettings extends AppCompatActivity {
         logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new LogoutDialogFragment().show(getSupportFragmentManager(), "logout_dialog");
+                Toast.makeText(getApplicationContext(), "Not available in Lite version", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -117,7 +107,6 @@ public class AccountSettings extends AppCompatActivity {
         try {
             if (!userSettingsFile.exists()) {
                 if (userSettingsFile.createNewFile()) {
-                    System.out.println("file created successfully");
 
                     AssetManager userSettingsAsset = getAssets();
                     InputStream is = userSettingsAsset.open(SETTINGS_FILE);

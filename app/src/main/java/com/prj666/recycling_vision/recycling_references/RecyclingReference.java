@@ -7,12 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.prj666.recycling_vision.Navigation;
 import com.prj666.recycling_vision.R;
-import com.prj666.recycling_vision.user.Login;
-import com.prj666.recycling_vision.user.PasswordReset;
 
 public class RecyclingReference extends AppCompatActivity {
     final String RECYCLING_REFERENCE_LINK = "https://www.toronto.ca/servicespayments/recycling-organics-garbage/houses/what-goes-in-my-blue-bin/";

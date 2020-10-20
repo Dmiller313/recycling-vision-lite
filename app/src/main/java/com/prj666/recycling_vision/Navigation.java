@@ -5,10 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.GridView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -19,8 +16,6 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.prj666.recycling_vision.recycling_references.RecyclingReference;
 import com.prj666.recycling_vision.user.AccountSettings;
-import com.prj666.recycling_vision.user.Login;
-import com.prj666.recycling_vision.user.Settings;
 
 import org.json.JSONObject;
 
@@ -93,51 +88,43 @@ public class Navigation extends AppCompatActivity {
             });
             queue.add(tfRequest);
 
-            if(Login.isUserLoggedIn()){
-                setContentView(R.layout.activity_navigation);
-                Button takePhoto = findViewById(R.id.takephoto);
-                Button settings = findViewById(R.id.settings);
-                Button reference = findViewById(R.id.reference);
-                Button matchHistory = findViewById(R.id.nav_match_history);
+            setContentView(R.layout.activity_navigation);
+            Button takePhoto = findViewById(R.id.takephoto);
+            Button settings = findViewById(R.id.settings);
+            Button reference = findViewById(R.id.reference);
+            Button matchHistory = findViewById(R.id.nav_match_history);
 
-                takePhoto.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
+            takePhoto.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
 
-                        Intent i = new Intent(Navigation.this, TakePhoto.class);
-                        startActivity(i);
-                    }
-                });
+                    Intent i = new Intent(Navigation.this, TakePhoto.class);
+                    startActivity(i);
+                }
+            });
 
-                settings.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent i = new Intent(Navigation.this, AccountSettings.class);
-                        startActivity(i);
-                    }
-                });
+            settings.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i = new Intent(Navigation.this, AccountSettings.class);
+                    startActivity(i);
+                }
+            });
 
-                reference.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent i = new Intent(Navigation.this, RecyclingReference.class);
-                        startActivity(i);
-                    }
-                });
+            reference.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i = new Intent(Navigation.this, RecyclingReference.class);
+                    startActivity(i);
+                }
+            });
 
-                matchHistory.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent i = new Intent(Navigation.this, MatchHistory.class);
-                        startActivity(i);
-                    }
-                });
-
-            }
-            else {
-                Intent i = new Intent(Navigation.this, Login.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(i);
-            }
+            matchHistory.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getApplicationContext(), "Not available in Lite version", Toast.LENGTH_SHORT).show();
+                }
+            });
         }
         else{
             Intent tou = new Intent(Navigation.this, Terms.class);

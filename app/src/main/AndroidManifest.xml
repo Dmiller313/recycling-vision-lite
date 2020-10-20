@@ -39,33 +39,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".user.PasswordReset"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".recycling_references.RecyclingReference"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".user.Registration"
             android:screenOrientation="portrait" />
         <activity
             android:name=".user.AccountSettings"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".user.ValidationEmail"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".user.AccountRecovery"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".TakePhoto"
             android:screenOrientation="portrait" />
-        <activity
-            android:name=".user.Login"
-            android:screenOrientation="portrait" />
 
-        <activity
-            android:name=".MatchHistory"
-            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

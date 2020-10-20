@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.net.Uri;
 import android.os.Bundle;
 import android.util.Base64;
 import android.view.View;
@@ -20,7 +19,6 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.prj666.recycling_vision.user.Login;
 
 
 import org.json.JSONException;
@@ -97,7 +95,8 @@ public class ResultOverlay extends AppCompatActivity {
                     e.printStackTrace();
                 }
             }
-            boolean finalHistory = history;
+            //TODO: DELETE THIS?
+
             JsonObjectRequest request = new JsonObjectRequest(
                     Request.Method.POST, url, json, new Response.Listener<JSONObject>() {
 
@@ -108,43 +107,6 @@ public class ResultOverlay extends AppCompatActivity {
                         if (status.equals("success")) {
                             result[0] = response.getString("data");
                             instructions.setText(result[0]);
-                            if(finalHistory){
-                                ByteArrayOutputStream baos = new ByteArrayOutputStream();
-                                bmp.compress(Bitmap.CompressFormat.JPEG, 60, baos);
-                                byte [] imageData = baos.toByteArray();
-                                String base64Img = Base64.encodeToString(imageData, 0);
-                                String userID = valueOf(Login.getUserId());
-
-                                RequestQueue historyQueue = Volley.newRequestQueue(ResultOverlay.this);
-                                String historyUrl = "https://recycling-vision.herokuapp.com/addmatchhistoryitem";
-                                Map<String, String> insertJsonData = new HashMap<>();
-                                insertJsonData.put("objectName", object);
-                                insertJsonData.put("probabilityMatch", String.valueOf(percentage));
-                                insertJsonData.put("objectImage", base64Img);
-                                insertJsonData.put("foundRecyclingInstruction", result[0]);
-                                insertJsonData.put("userID", userID);
-
-                                JSONObject historyJson = new JSONObject(insertJsonData);
-
-                                JsonObjectRequest historyReq = new JsonObjectRequest(Request.Method.POST,
-                                        historyUrl, historyJson, new Response.Listener<JSONObject>(){
-
-                                    @Override
-                                    public void onResponse(JSONObject response) {
-                                        System.out.println("Match history saved");
-                                    }
-                                }, new Response.ErrorListener(){
-
-                                    @Override
-                                    public void onErrorResponse(VolleyError error) {
-                                        System.out.println("Error saving match history");
-                                        error.getStackTrace();
-                                    }
-                                });
-
-                                historyQueue.add(historyReq);
-                            }
-
 
                         } else {
                             result[0] = "Error";
